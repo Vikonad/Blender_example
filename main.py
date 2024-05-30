@@ -10,14 +10,14 @@ scene = bpy.context.scene
 scene.collection.objects.link(obj)
 
 vertices = [
-    (-1, -1, 0), # Vertice 1
-    ( 1, -1, 0), # Vertice 2
-    ( 1,  1, 0), # Vertice 3
-    (-1,  1, 0)  # Vertice 4
+    (-1, -1, 0),
+    ( 1, -1, 0),
+    ( 1,  1, 0),
+    (-1,  1, 0)
 ]
 
 faces = [
-    (0, 1, 2, 3) # Faccia che unisce i quattro vertici
+    (0, 1, 2, 3)
 ]
 
 mesh.from_pydata(vertices, [], faces)
